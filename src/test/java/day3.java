@@ -29,7 +29,7 @@ public class day3 {
     }
 
     @Test
-    public void LoginAPICarLoan3() {
+    public void APICarLoan3() {
         //Rest API
         System.out.println("API Login Car Loan");
     }
