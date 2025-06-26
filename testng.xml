@@ -3,18 +3,18 @@
 <suite name="Loan Department">
     <test name="Personal Loan">
         <classes>
-            <class name="day1">
+            <class name="TestPackage.day1">
                 <methods>
                     <include name="Demo"/>
                 </methods>
             </class>
-            <class name="day2"/>
-            <class name="day4"/>
+            <class name="TestPackage.day2"/>
+            <class name="TestPackage.day4"/>
         </classes>
     </test>
     <test name="Car Loan">
         <classes>
-            <class name="day3">
+            <class name="TestPackage.day3">
                 <methods>
                     <exclude name="API.*"/>
                 </methods>

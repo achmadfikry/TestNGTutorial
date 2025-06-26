@@ -1,3 +1,5 @@
+package TestPackage;
+
 import org.testng.annotations.Test;
 
 public class day2 {
