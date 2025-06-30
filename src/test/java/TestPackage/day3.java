@@ -1,12 +1,14 @@
 package TestPackage;
 //rahulonlinetutor@gmail.com
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class day3 {
+
+    @BeforeClass
+    public void BeforeClass(){
+        System.out.println("Before Executing Any Methods in the class");
+    }
 
     @Test
     public void WebLoginCarLoan() {
@@ -21,6 +23,11 @@ public class day3 {
     @AfterMethod
     public void AfterEvery() {
         System.out.println("I will execute after every test method in day 3 class");
+    }
+
+    @AfterClass
+    public void AfterClass(){
+        System.out.println("After Executing All Methods in the class");
     }
 
     @Test
