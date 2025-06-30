@@ -1,6 +1,9 @@
 package TestPackage;
 //rahulonlinetutor@gmail.com
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class day3 {
@@ -10,10 +13,25 @@ public class day3 {
         System.out.println("Web Login Car Loan");
     }
 
+    @BeforeMethod
+    public void BeforeEvery() {
+        System.out.println("I will execute before every test method in day 3 class");
+    }
+
+    @AfterMethod
+    public void AfterEvery() {
+        System.out.println("I will execute after every test method in day 3 class");
+    }
+
     @Test
     public void MobileLoginCarLoan() {
         //Appium
         System.out.println("Mobile Login Car Loan");
+    }
+
+    @BeforeSuite
+    public void BfSuite(){
+        System.out.println("I am no 1 BfSuite");
     }
 
     @Test

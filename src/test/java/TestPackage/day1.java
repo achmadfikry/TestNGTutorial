@@ -1,5 +1,6 @@
 package TestPackage;
 
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,11 @@ public class day1 {
     @Test
     public void Demo(){
         System.out.println("Hello");
+    }
+
+    @AfterSuite
+    public void AfSuite(){
+        System.out.println("I am the no 1  from last");
     }
 
     @Test
