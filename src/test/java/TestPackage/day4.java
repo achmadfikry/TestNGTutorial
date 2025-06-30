@@ -10,7 +10,7 @@ public class day4 {
         System.out.println("Web Login Home Loan");
     }
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void MobileLoginHomeLoan() {
         //Appium
         System.out.println("Mobile Login Home Loan");

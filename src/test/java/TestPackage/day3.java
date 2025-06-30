@@ -30,7 +30,7 @@ public class day3 {
         System.out.println("After Executing All Methods in the class");
     }
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void MobileLoginCarLoan() {
         //Appium
         System.out.println("Mobile Login Car Loan");
