@@ -41,7 +41,7 @@ public class day3 {
         System.out.println("I am no 1 BfSuite");
     }
 
-    @Test
+    @Test(enabled = true)
     public void MobileSignInCarLoan() {
         //Appium
         System.out.println("Mobile Sign In Car Loan");
