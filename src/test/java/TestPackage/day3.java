@@ -10,9 +10,11 @@ public class day3 {
         System.out.println("Before Executing Any Methods in the class");
     }
 
+    @Parameters({"URL"})
     @Test
-    public void WebLoginCarLoan() {
+    public void WebLoginCarLoan(String urlname) {
         System.out.println("Web Login Car Loan");
+        System.out.println(urlname);
     }
 
     @BeforeMethod
