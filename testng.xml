@@ -20,7 +20,7 @@
         <classes>
             <class name="TestPackage.day3">
                 <methods>
-<!--                    <exclude name="API.*"/>-->
+                    <exclude name="API.*"/>
                 </methods>
             </class>
         </classes>

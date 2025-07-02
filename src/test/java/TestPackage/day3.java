@@ -50,15 +50,35 @@ public class day3 {
         System.out.println("Mobile Sign In Car Loan");
     }
 
-    @Test(timeOut = 4000)
-    public void MobileSignOutCarLoan() {
+    @Test(dataProvider = "getData")
+    public void MobileSignOutCarLoan(String username, String password) {
         //Appium
         System.out.println("Mobile Sign Out Car Loan");
+        System.out.println(username);
+        System.out.println(password);
     }
 
     @Test(dependsOnMethods = {"WebLoginCarLoan", "MobileSignOutCarLoan"})
     public void APICarLoan3() {
         //Rest API
         System.out.println("API Login Car Loan");
+    }
+
+    @DataProvider
+    public Object[][] getData(){
+        //1st combination - username password - good credit history
+        //2nd - username password - no credit history
+        //3rd - fraudelent credit history
+        //defining array with row & columns (multidimentional object array)
+        //3 -> how many combination that we have
+        //2 -> how many values that we are passing
+        Object[][] data = new Object[3][2];
+        data[0][0] = "firstusername";
+        data[0][1] = "firstpassword";
+        data[1][0] = "secondusername";
+        data[1][1] = "secondpassword";
+        data[2][0] = "thirdusername";
+        data[2][1] = "thirdpassword";
+        return data;
     }
 }
