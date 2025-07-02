@@ -47,7 +47,7 @@ public class day3 {
         System.out.println("Mobile Sign In Car Loan");
     }
 
-    @Test
+    @Test(timeOut = 4000)
     public void MobileSignOutCarLoan() {
         //Appium
         System.out.println("Mobile Sign Out Car Loan");
