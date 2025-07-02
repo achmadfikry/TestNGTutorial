@@ -10,11 +10,12 @@ public class day3 {
         System.out.println("Before Executing Any Methods in the class");
     }
 
-    @Parameters({"URL"})
+    @Parameters({"URL", "APIKey/username"})
     @Test
-    public void WebLoginCarLoan(String urlname) {
+    public void WebLoginCarLoan(String urlname, String key) {
         System.out.println("Web Login Car Loan");
         System.out.println(urlname);
+        System.out.println(key);
     }
 
     @BeforeMethod
