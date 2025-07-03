@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Loan Department">
+<suite name="Loan Department" parallel="tests" thread-count="2">
 <!--    <parameter name="URL" value="qaclickacademy.com"></parameter>-->
     <listeners>
         <listener class-name="TestPackage.Listeners"/>
     </listeners>
-    <test name="Personal Loan">
+    <test name="Personal Loan" parallel="tests" thread-count="2">
+<!--    <test name="Personal Loan">-->
         <parameter name="URL" value="personalloan.com"></parameter>
         <classes>
             <class name="TestPackage.day1">
