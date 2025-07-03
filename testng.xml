@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Loan Department">
 <!--    <parameter name="URL" value="qaclickacademy.com"></parameter>-->
+    <listeners>
+        <listener class-name="TestPackage.Listeners"/>
+    </listeners>
     <test name="Personal Loan">
         <parameter name="URL" value="personalloan.com"></parameter>
         <classes>
